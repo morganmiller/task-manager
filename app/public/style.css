@@ -1,0 +1,75 @@
+body {
+  background: url(images/1827888.jpg) no-repeat center center fixed;
+  color: #ece5e7;
+  font-family: 'Cinzel', serif;
+}
+
+/*adds transparent overlay to background image*/
+body:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: pink;
+  opacity: 0.3;
+}
+
+h1 {
+  font-size: 56px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.dash {
+  padding-top: 30%;
+}
+
+#primary-nav {
+  margin: auto;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+ul, li {
+  font-family: arial, sans-serif;
+  font-size: 40px;
+  margin: auto;
+}
+
+li {
+  display: inline;
+  padding: 45px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Satisfy', cursive;
+}
+
+a:link {
+  color: #ece5e7;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #ece5e7;
+  font-weight: bold;
+}
+
+
+
+
+/*.dash h1 {*/
+  /*background-color: grey;*/
+  /*opacity: 0.5;*/
+/*}*/
