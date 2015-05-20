@@ -3,4 +3,7 @@ tasks:
 - id: 4
   title: task
   description: heyyyy
-total: 4
+- id: 5
+  title: fun
+  description: stuff
+total: 5
