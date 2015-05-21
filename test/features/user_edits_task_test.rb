@@ -6,7 +6,11 @@ class EditTaskTest < FeatureTest
     TaskManager.create(title: "practice", description: "tonight")
     visit '/tasks'
     click_link('Edit')
-    assert_equal '/tasks/1/edit', current_path
+    
+    task = TaskManager.all.last
+    
+    assert_equal "/tasks/#{task.id}/edit", current_path
+    
     fill_in 'task[title]', with: 'tomorrow'
     fill_in 'task[description]', with: 'sequel'
     click_link_or_button "Update Task"
